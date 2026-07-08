@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:oracle:thin:@//localhost:1521/XEPDB1
-    username: bookuser
-    password: bookpass
+    url: ${DB_URL:jdbc:oracle:thin:@//localhost:1521/XEPDB1}
+    username: ${DB_USERNAME:bookuser}
+    password: ${DB_PASSWORD:bookpass}
     driver-class-name: oracle.jdbc.OracleDriver
 
   flyway:
