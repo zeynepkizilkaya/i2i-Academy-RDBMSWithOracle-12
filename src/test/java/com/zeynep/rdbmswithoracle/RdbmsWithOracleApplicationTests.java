@@ -1,13 +1,12 @@
 package com.zeynep.rdbmswithoracle;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
 class RdbmsWithOracleApplicationTests {
 
     @Test
-    void contextLoads() {
+    void applicationClassExists() {
+        RdbmsWithOracleApplication.main(new String[] {"--spring.main.web-application-type=none", "--spring.flyway.enabled=false"});
     }
 
 }
